@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Wk6CalculatorExample.MainPage">
+             x:Class="Wk6CalculatorExample.MainPage"
+             WidthRequest="500"
+             > <!--ADD WIDTH REQUEST NEXT WEEK-->
 
     <VerticalStackLayout Padding="40">
         <!--Display Label for Res-->
@@ -13,9 +15,10 @@
                     HorizontalTextAlignment="End"
                    Margin="0,20"
                 />
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto"
+        <Grid RowDefinitions="25*,25*,25*,25*"
                   ColumnDefinitions="*,*,*,*"
-                  >
+                    RowSpacing="5" ColumnSpacing="5"
+                  > <!--ADD ROW AND COL SPACING NEXT WEEK-->
             <!--Row 1 -->
             <Button Text="7" Grid.Row="0" Grid.Column="0" Clicked="OnNumberClicked" />
             <Button Text="8" Grid.Row="0" Grid.Column="1" Clicked="OnNumberClicked" />

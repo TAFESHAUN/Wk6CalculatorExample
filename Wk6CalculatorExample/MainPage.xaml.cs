@@ -36,7 +36,7 @@
         private void OnOperatorClicked(string operatorSymbol)
         {
             _currentOperator = operatorSymbol;
-            _firstNumberValue = double.Parse(displayRes.Text); // SUNNY DAY FOR PARSE rn
+            _firstNumberValue = double.Parse(displayRes.Text); // Account for multiple operators
             _secondNumberValue = true;
 
             _displayCalculation += " " + operatorSymbol + " ";
